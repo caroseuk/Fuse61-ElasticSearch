@@ -1,10 +1,5 @@
-Fuse61-ElasticSearch
-====================
-
-Fuse 6.1 Example using Camel / ActiveMQ with metrics provided by ElasticSearch/Kibana3
-
-fuse-fabric-mq-example
-======================
+Fuse61-ElasticSearch Example
+============================
 
 An example of using JBoss Fuse ESB, JBoss Fuse MQ and Fabric to build highly scalable messaging solutions (with analytics).
 
@@ -15,7 +10,7 @@ After running the installed Karaf script, multiple containers will be created co
 <h4>Getting started...</h4>
 
 1. Clone this repo  
-2. Build and install example into your local maven repo  
+2. navigate to the fuse-fabric-mq-example root folder and execute the following command:  
 `$ mvn clean install`  
 4. Launch JBoss Fuse 6.1 ESB  
 5. Run the installed Karaf installer using the following command within the console:  
