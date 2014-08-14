@@ -1,5 +1,5 @@
-Fuse61-ElasticSearch Example
-============================
+Fuse 6.1 - ElasticSearch Example
+================================
 
 An example of using JBoss Fuse ESB, JBoss Fuse MQ and Fabric to build highly scalable messaging solutions (with analytics).
 
