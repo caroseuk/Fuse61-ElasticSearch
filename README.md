@@ -20,8 +20,8 @@ After running the installed Karaf script, multiple containers will be created co
 8. To see the URL's to access ElasticSearch/Kibana3/ you can run the following command:
 `cluster-list`  
 
-**Hawtio** - http://localhost:8181/hawtio
-**ElasticSearch** - http://localhost:8181/eshead
+**Hawtio** - http://localhost:8181/hawtio  
+**ElasticSearch** - http://localhost:8181/eshead  
 **Kibana** - http://localhost:8181/kibana3  
 
 <h4>What you should see</h4>
