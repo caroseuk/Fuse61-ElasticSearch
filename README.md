@@ -22,7 +22,7 @@ After running the installed Karaf script, multiple containers will be created co
 
 **Hawtio** - http://localhost:8181/hawtio  
 **ElasticSearch** - http://localhost:8181/eshead  
-**Kibana** - http://localhost:8181/kibana3  
+**Kibana** - http://localhost:8181/kibana3    
 
 <h4>What you should see</h4>
 You should be able to see the following areas:
@@ -45,5 +45,5 @@ After pointing your browser at the Kibana3 URL, you will be able to create graph
 * [Jboss Fuse](https://access.redhat.com/site/documentation/JBoss_Fuse/)
 * [hawtio](http://hawt.io/)
 * [Fabric](http://fabric8.io)
-* [Competing Consumer EIP](http://www.enterpriseintegrationpatterns.com/CompetingConsumers.html)
+* [ElasticSearch](http://www.elasticsearch.org/)
 
