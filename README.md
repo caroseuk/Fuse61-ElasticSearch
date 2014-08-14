@@ -30,13 +30,13 @@ Hawtio - http://localhost:8181/hawtio
 <h4>What you should see</h4>
 You should be able to see the following areas:
 
-<h3>Camel/AMQ Producer/Consumers</h3>
+<h5>Camel/AMQ Producer/Consumers</h5>
 A Camel based producer is generating messages every second into the AMQ broker, two consumers are consuming the messages from the AMQ broker.
 
-<h3>ElasticSearch User Interface/Console</h3>
+<h5>ElasticSearch User Interface/Console</h5>
 After pointing you browser at the ElasticSearch web interface, you will be presented with the status page of the cluster. from here you can browse around the interface and navigate through the multiple tabs.
 
-<h3>Kibana3 Graph/Charts</h3>
+<h5>Kibana3 Graph/Charts</h5>
 After pointing your browser at the Kibana3 URL, you will be able to create graphs and charts based on the metrics found within ElasticSearch.
 
 <h4>Want to see what else you can do?</h4>
