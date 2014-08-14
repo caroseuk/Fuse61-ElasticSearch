@@ -1,0 +1,57 @@
+
+################
+### MQBroker ###
+################
+
+fabric:create --wait-for-provisioning --profile fabric
+container-create-child root fuse-example-broker
+mq-create --assign-container fuse-example-broker fuse-example-mq-profile
+
+
+################
+### Profiles ###
+################
+
+# Config profile
+fabric:profile-create --parents feature-camel-jms --parents mq-broker-default.fuse-example-mq-profile  base-profile
+fabric:profile-edit -r mvn:org.fusebyexample.mq/fuse-fabric-mq-example-features/${project.version}/xml/features base-profile
+
+# Producer profile
+fabric:profile-create --parents base-profile producer-profile
+fabric:profile-edit --features producer-feature producer-profile
+
+# Consumer profiles
+fabric:profile-create --parents base-profile consumer-profile
+fabric:profile-edit --features consumer-feature consumer-profile
+
+
+##############################
+### AMQ / Camel Containers ###
+##############################
+
+# Producer container
+fabric:container-create-child --profile producer-profile root producer-container
+
+# Consumer containers
+fabric:container-create-child --profile consumer-profile root consumer-container 2
+
+#################################
+### Elastic Search Containers ###
+#################################
+
+# Create 3 child containers with the insight-core profile
+fabric:container-create-child --profile insight-core root metrics1
+fabric:container-create-child --profile insight-core root metrics2
+fabric:container-create-child --profile insight-core root metrics3
+
+###########################
+### Add Kibana / eshead ###
+###########################
+
+# Assign the profile "insight-kibana" to the root container to deploy kibana and eshead
+fabric:container-add-profile root insight-kibana
+
+shell:watch container-list
+
+
+

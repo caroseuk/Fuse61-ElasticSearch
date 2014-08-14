@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="fuse-basic-features">
+
+	<feature name="fuse-basic-base-feature" version="0.0.1-SNAPSHOT">
+		<feature dependency="true">mq-fabric-camel</feature>
+		<feature dependency="true">camel-blueprint</feature>
+		<bundle>mvn:commons-pool/commons-pool/1.6</bundle>
+	</feature>
+
+	<feature name="consumer-feature" version="0.0.1-SNAPSHOT">
+		<feature dependency="true">fuse-basic-base-feature</feature>
+		<bundle>mvn:org.fusebyexample.mq/fuse-fabric-mq-example-consumer/0.0.1-SNAPSHOT
+		</bundle>
+	</feature>
+
+	<feature name="producer-feature" version="0.0.1-SNAPSHOT">
+		<feature dependency="true">fuse-basic-base-feature</feature>
+		<bundle>mvn:org.fusebyexample.mq/fuse-fabric-mq-example-producer/0.0.1-SNAPSHOT
+		</bundle>
+	</feature>
+
+</features>

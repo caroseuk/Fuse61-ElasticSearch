@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1408026562073
+Build-Jdk: 1.7.0_60
+Built-By: chrose
+Bundle-ManifestVersion: 2
+Bundle-Name: Fuse fabric basic MQ example Consumer
+Bundle-SymbolicName: fuse-fabric-mq-example-consumer
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: javax.jms;version="[1.1,2)",org.apache.activemq,org.apac
+ he.activemq.camel.component;version="[5.9,6)",org.apache.activemq.pool,
+ org.apache.camel.blueprint;version="[2.12.0,3)",org.osgi.service.bluepr
+ int;version="[1.0.0,2.0.0)",org.osgi.service.cm;version="[1.4,2)"
+Tool: Bnd-1.50.0
