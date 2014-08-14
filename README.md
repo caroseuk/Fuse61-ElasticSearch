@@ -5,12 +5,12 @@ An example of using JBoss Fuse ESB, JBoss Fuse MQ and Fabric to build highly sca
 
 This example will build and install an Camel/ActiveMQ/ElasticSearch solution and install it in your local Maven repository.
 
-After running the installed Karaf script, multiple containers will be created containing A message producer, broker and multiple consumers. As well as this, 3 metrics child containers will be created with the insight-core profile installed. The insight-kibana profile will also be added to the root container to enable the web based ElasticSearch and Kibana3 console.
+After running the installed Karaf script, multiple containers will be created containing A message producer, broker and multiple consumers. As well as this, 3 metrics child containers (**metrics1, metrics2, metrics3**) will be created with the **insight-core** profile installed. The insight-kibana profile will also be added to the root container to enable the web based ElasticSearch and Kibana3 console.
 
 <h4>Getting started...</h4>
 
 1. Clone this repo  
-2. navigate to the fuse-fabric-mq-example root folder and execute the following command:  
+2. navigate to the **fuse-fabric-mq-example** root folder and execute the following command:  
 `$ mvn clean install`  
 4. Launch JBoss Fuse 6.1 ESB  
 5. Run the installed Karaf installer using the following command within the console:  
@@ -20,7 +20,9 @@ After running the installed Karaf script, multiple containers will be created co
 8. To see the URL's to access ElasticSearch/Kibana3/ you can run the following command:
 `cluster-list`  
 
-Hawtio - http://localhost:8181/hawtio  
+**Hawtio** - http://localhost:8181/hawtio
+**ElasticSearch** - http://localhost:8181/eshead
+**Kibana** - http://localhost:8181/kibana3  
 
 <h4>What you should see</h4>
 You should be able to see the following areas:
@@ -36,9 +38,6 @@ After pointing your browser at the Kibana3 URL, you will be able to create graph
 
 <h4>Want to see what else you can do?</h4>
 
-Try some of the following...
-
-1. Add to the producer and consumer camel routes and checkout how cool hawtio is!
 2. Add the **insight-camel** profile to the child containers containing any camel routes to collect data on exchanges made. These can then be filtered from within the ElasticSearch web console.
 
 # Useful links
